@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre 3D 💌</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="corazones"></div>
+
+<div class="sparkles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<div class="sobre" onclick="abrirSobre()">
+
+    <!-- tapa -->
+    <div class="tapa"></div>
+
+    <!-- carta -->
+    <div class="carta">
+
+        <div class="corazon">
+        ❤️
+        </div>
+
+        <div class="texto">
+            Hola,<br>
+            quiero contarte<br>
+            algo...
+        </div>
+
+                <!-- contenido de la carta -->
+        <div class="contenido-carta" onclick="event.stopImmediatePropagation(); siguientePagina();">
+        <div class="pagina activa">
+            <p>
+            Me dijeron que el "no" ya lo tengo,<br>
+            entonces, voy por la humillación.
+            </p>
+        </div>
+        <div class="pagina">
+            <p>
+            Dicen que los ojos no mienten,<br>
+            por eso trato de no verte directo,<br>
+            para que no sepas lo que yo siento.
+            </p>
+        </div>
+        <div class="pagina">
+            <p>
+            Perdona si llego sin aviso<br>
+            a decirte esto,<br>
+            aunque creo que tú<br>
+            ya lo vas entendiendo.
+            </p>
+        </div>
+        <div class="pagina">
+            <p>
+            Y tengo tiempo pensando en esto<br>
+            pero  no tengo el valor de decirlo en persona<br>
+            por eso como ingeniera lo hago<br>
+            de esta simple forma.<br>
+            </p>
+        </div>
+        <div class="pagina">
+        <p>
+            Ya todos lo saben y creo que hasta tú,<br>
+            así que sin rodeos lo diré,<br>
+            no sé qué pase después de esto,<br>
+            ni qué pienses al leer...
+        </p>
+        </div>
+        <div class="pagina">
+            <p>
+            ¡ME GUSTAS! mucho...<br>
+            y no empezó desde ayer.
+            </p>
+        </div>
+        <div class="flecha izquierda" onclick="event.stopPropagation(); paginaAnterior();">
+            ← Atrás
+        </div>
+
+        <div class="flecha derecha" onclick="event.stopPropagation(); siguientePagina();">
+            Siguiente →
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
